@@ -1,27 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Russo+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 *,
 *::after,
 *::before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 :root {
-    --color-eyebrow: #e25d1f; 
-    --color-text-light: #FFFFFF;
-    --font-eyebrow: 'Inter', sans-serif;
-    --font-title: 'Russo One', sans-serif;
+  scroll-behavior: smooth;
+
+  --text-color: #252b42;
+  --second-text-color: #374754;
+  --background-color: white;
+  --primary-color: #2091f9;
+  --border-color: #dddddd;
+  --input-border-color: #e8e8e8;
+  --input-color: #650808;
 }
 
-.container {
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+section {
+  padding: 120px 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   max-width: 1200px;
   margin: auto;
   padding: 0px 32px;
-
 }
 
-.hero {
-  padding-top: 90px;
+/* nav .icons__icon {
+  color: var(--background-color);
+  font-size: 1.2rem;
 }
+
+.contact-us__icon,
+.contact-us__social-icon {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.footer__contact-icon,
+.footer__social-link i {
+  color: var(--background-color);
+  font-size: 1.2rem;
+} */
