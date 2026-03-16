@@ -1,25 +1,201 @@
 <section class="testimonials">
   <div class="testimonials__wrapper">
-    <div class="testimonials__title">
-      <h2>Testimonials</h2>
+    <h2 class="testimonials__heading">Testimonials</h2>
 
-      <div class="testimonials__cards">
-        <div class="testimonials__cards-card">
-          <img src="img/IBM.svg" alt="ibm" />
-          <p>
-            Most calendars are designed for teams. Slate is designed for
-            freelancers who want a simple way to plan their schedule.
-          </p>
-          <div class="testimonials__cards-card-profile">
-            <img src="img/avatar-1.png" alt="Avatar 1" />
-            <div>
-              <p>Organize across</p>
-              <span>Ui designer</span>
+    <div
+      id="testimonialsCarousel"
+      class="testimonials__carousel carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators testimonials__indicators">
+        <button
+          type="button"
+          data-bs-target="#testimonialsCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#testimonialsCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#testimonialsCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#testimonialsCarousel"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#testimonialsCarousel"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+
+      <div class="carousel-inner testimonials__slides">
+        <div class="carousel-item testimonials__slide active">
+          <div class="testimonials__card">
+            <img
+              class="testimonials__logo"
+              src="img/IBM.svg"
+              alt="IBM logo"
+            />
+            <p class="testimonials__text">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers who want a simple way to plan their schedule.
+            </p>
+
+            <div class="testimonials__profile">
+              <img
+                class="testimonials__avatar"
+                src="img/avatar-1.svg"
+                alt="Avatar of Emma"
+              />
+              <div class="testimonials__profile-info">
+                <p class="testimonials__profile-name">Emma Johnson</p>
+                <span class="testimonials__profile-role">UI designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item testimonials__slide">
+          <div class="testimonials__card">
+            <img
+              class="testimonials__logo"
+              src="img/google-logo.svg"
+              alt="Google logo"
+            />
+            <p class="testimonials__text">
+              We saved hours every week using the new schedule builder. It’s
+              simple to share with clients and makes our planning more reliable.
+            </p>
+
+            <div class="testimonials__profile">
+              <img
+                class="testimonials__avatar"
+                src="img/avatar-2.svg"
+                alt="Avatar of Miguel"
+              />
+              <div class="testimonials__profile-info">
+                <p class="testimonials__profile-name">Miguel Reyes</p>
+                <span class="testimonials__profile-role">Product manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item testimonials__slide">
+          <div class="testimonials__card">
+            <img
+              class="testimonials__logo"
+              src="img/microsoft-logo.svg"
+              alt="Microsoft logo"
+            />
+            <p class="testimonials__text">
+              The onboarding was smooth, and the team loves the clean interface.
+              It feels like it was built just for us.
+            </p>
+
+            <div class="testimonials__profile">
+              <img
+                class="testimonials__avatar"
+                src="img/avatar-3.svg"
+                alt="Avatar of Priya"
+              />
+              <div class="testimonials__profile-info">
+                <p class="testimonials__profile-name">Priya Singh</p>
+                <span class="testimonials__profile-role">Marketing lead</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item testimonials__slide">
+          <div class="testimonials__card">
+            <img
+              class="testimonials__logo"
+              src="img/amazon-logo.svg"
+              alt="Amazon logo"
+            />
+            <p class="testimonials__text">
+              I appreciate how fast I can iterate on plans. The interface is
+              intuitive and feels very polished.
+            </p>
+
+            <div class="testimonials__profile">
+              <img
+                class="testimonials__avatar"
+                src="img/avatar-4.svg"
+                alt="Avatar of Jordan"
+              />
+              <div class="testimonials__profile-info">
+                <p class="testimonials__profile-name">Jordan Lee</p>
+                <span class="testimonials__profile-role">Product designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item testimonials__slide">
+          <div class="testimonials__card">
+            <img
+              class="testimonials__logo"
+              src="img/dropbox-logo.svg"
+              alt="Dropbox logo"
+            />
+            <p class="testimonials__text">
+              Our team stayed aligned even when plans shifted. The timeline view
+              makes it easy to spot conflicts.
+            </p>
+
+            <div class="testimonials__profile">
+              <img
+                class="testimonials__avatar"
+                src="img/avatar-5.svg"
+                alt="Avatar of Sofia"
+              />
+              <div class="testimonials__profile-info">
+                <p class="testimonials__profile-name">Sofia Martinez</p>
+                <span class="testimonials__profile-role">Operations lead</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <button class="primary-btn">More Testimonials</button>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#testimonialsCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#testimonialsCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+
+    <button class="primary-btn testimonials__more">
+      More Testimonials
+    </button>
   </div>
 </section>

@@ -23,10 +23,26 @@
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text-color);
+  font-size: 48px;
+  font-weight: 400;
+  padding: 10px;
+  gap: 10px;
+  color: var(--background-color);
   margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  color: var(--text-color);
+}
+
+p {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--second-text-color);
 }
 
 body {
@@ -37,11 +53,15 @@ body {
 
 section {
   padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 img {
-  display: block;
-  width: 100%;
+  display: flex;
+  max-width: 100%;
 }
 
 container {
@@ -51,6 +71,17 @@ container {
   max-width: 1200px;
   margin: auto;
   padding: 0px 32px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid var(--primary-color);
+  padding: 0px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 35px;
+  height: 60px;
 }
 
 /* nav .icons__icon {
