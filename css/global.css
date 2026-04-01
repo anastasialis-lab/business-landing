@@ -77,11 +77,26 @@ button {
   background-color: var(--primary-color);
   color: white;
   border: 1px solid var(--primary-color);
-  padding: 0px 24px;
+  padding: 8px 24px;
   font-size: 20px;
   cursor: pointer;
   border-radius: 35px;
-  height: 60px;
+  height: auto;
+}
+
+input, textarea, select {
+  width: 100%;
+  border: 1px solid var(--input-border-color);
+  border-radius: 999px;
+  padding: 0 20px;
+  font: inherit;
+  color: var(--text-color);
+  background-color: white;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-color);
 }
 
 /* nav .icons__icon {
